@@ -55,3 +55,6 @@ let complexObject: complex ={
 }
 console.log(complexObject.data);
 console.log(complexObject.output(true));
+
+let multipleType: number | string = 27;
+multipleType = '12';

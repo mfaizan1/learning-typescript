@@ -47,3 +47,5 @@ var complexObject = {
 };
 console.log(complexObject.data);
 console.log(complexObject.output(true));
+var multipleType = 27;
+multipleType = '12';
