@@ -45,8 +45,8 @@ let user: {name: string, age: number} = {
   age: 24
 }
 console.log(user);
-
-let complexObject: {data: number[], output: (val: boolean) => number[]} ={
+type complex = {data: number[], output: (val: boolean) => number[]}
+let complexObject: complex ={
   data : [1,2,4,5],
   output: function(val){
     return this.data;
