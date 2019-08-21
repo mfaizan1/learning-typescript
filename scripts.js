@@ -23,13 +23,14 @@ function getName() {
     return myName;
 }
 console.log(getName());
-function doSomething() {
-    for (var i = 0; i < 10; i++) {
-        console.log(i);
-    }
+function saySomething() {
+    console.log("hello");
 }
-doSomething();
+saySomething();
 function mutiply(num1, num2) {
     return num1 * num2;
 }
 console.log(mutiply(4, 9));
+var someFunction;
+someFunction = mutiply;
+console.log(someFunction(4, 2));

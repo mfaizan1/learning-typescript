@@ -26,14 +26,16 @@ function getName() : string{
 
 console.log(getName());
 
-function doSomething(): void {
-  for(let i = 0 ; i< 10; i++ ){
-    console.log(i);
-  }
+function saySomething(): void {
+    console.log("hello");
 }
-doSomething();
+saySomething();
 
 function mutiply(num1: number, num2: number){
   return num1 * num2;
 }
 console.log(mutiply(4,9));
+
+let someFunction: (val1: number, val2: number) => number;
+someFunction = mutiply;
+console.log(someFunction(4,2));
