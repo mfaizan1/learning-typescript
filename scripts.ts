@@ -58,3 +58,8 @@ console.log(complexObject.output(true));
 
 let multipleType: number | string = 27;
 multipleType = '12';
+
+let finalValue = 10;
+if(typeof finalValue == "number"){
+  console.log(`${finalValue} is a number`);
+}

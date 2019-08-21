@@ -49,3 +49,7 @@ console.log(complexObject.data);
 console.log(complexObject.output(true));
 var multipleType = 27;
 multipleType = '12';
+var finalValue = 10;
+if (typeof finalValue == "number") {
+    console.log(finalValue + " is a number");
+}
