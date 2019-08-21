@@ -58,6 +58,8 @@ function throwError() {
     throw new Error("will not let you compelete");
 }
 // console.log(throwError());
+// apparently in new version of TS once you have assigned value null
+// to variable on initializaiton it will be of type any
 var canBeNull = 1;
 var canbeAny;
 var canOnlyBeNull = null;
@@ -65,4 +67,4 @@ canBeNull = null;
 canbeAny = null;
 canbeAny = 'yes';
 canOnlyBeNull = 11;
-console.log("should be null only", canOnlyBeNull);
+console.log("should be null only", canOnlyBeNull); // no it isn't

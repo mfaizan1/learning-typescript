@@ -1,11 +1,13 @@
-let bankAccount = {
+
+type bankAccountType = {money: number, deposit: (val1: number) => void}
+let bankAccount: bankAccountType  = {
     money: 2000,
     deposit(value) {
         this.money += value;
     }
 };
 
-let myself = {
+let myself : {name: string, bankAccount: bankAccountType , hobbies: string[] } = {
     name: "Max",
     bankAccount: bankAccount,
     hobbies: ["Sports", "Cooking"]
