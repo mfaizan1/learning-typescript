@@ -53,3 +53,8 @@ var finalValue = 10;
 if (typeof finalValue == "number") {
     console.log(finalValue + " is a number");
 }
+//never !== void , it is used when a function is supposed not to be completed
+function throwError() {
+    throw new Error("will not let you compelete");
+}
+console.log(throwError());
