@@ -7,3 +7,5 @@ let fruits : any[] = ['apple','banana','mango'];
 fruits = ['cost',10];
 let cars : string[] = ['Honda','Faw','BMW'];
 let numberArray : number[] = [1,2,3,4];
+
+let addressTuple: [string, number] = ["thisstreet", 99];
