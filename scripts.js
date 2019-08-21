@@ -57,4 +57,12 @@ if (typeof finalValue == "number") {
 function throwError() {
     throw new Error("will not let you compelete");
 }
-console.log(throwError());
+// console.log(throwError());
+var canBeNull = 1;
+var canbeAny;
+var canOnlyBeNull = null;
+canBeNull = null;
+canbeAny = null;
+canbeAny = 'yes';
+canOnlyBeNull = 11;
+console.log("should be null only", canOnlyBeNull);
