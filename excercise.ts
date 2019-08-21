@@ -2,7 +2,7 @@
 type bankAccountType = {money: number, deposit: (val1: number) => void}
 let bankAccount: bankAccountType  = {
     money: 2000,
-    deposit(value) {
+    deposit(value: number): void {
         this.money += value;
     }
 };
