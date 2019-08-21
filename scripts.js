@@ -19,3 +19,17 @@ var colors;
 })(colors || (colors = {}));
 var myColor = colors.black;
 console.log(myColor);
+function getName() {
+    return myName;
+}
+console.log(getName());
+function doSomething() {
+    for (var i = 0; i < 10; i++) {
+        console.log(i);
+    }
+}
+doSomething();
+function mutiply(num1, num2) {
+    return num1 * num2;
+}
+console.log(mutiply(4, 9));
