@@ -39,3 +39,19 @@ console.log(mutiply(4,9));
 let someFunction: (val1: number, val2: number) => number;
 someFunction = mutiply;
 console.log(someFunction(4,2));
+
+let user: {name: string, age: number} = {
+  name:'faizan',
+  age: 24
+}
+console.log(user);
+
+let complexObject: {data: number[], output: (val: boolean) => number[]} ={
+  data : [1,2,4,5],
+  output: function(val){
+    return this.data;
+  }
+
+}
+console.log(complexObject.data);
+console.log(complexObject.output(true));

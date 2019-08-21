@@ -34,3 +34,16 @@ console.log(mutiply(4, 9));
 var someFunction;
 someFunction = mutiply;
 console.log(someFunction(4, 2));
+var user = {
+    name: 'faizan',
+    age: 24
+};
+console.log(user);
+var complexObject = {
+    data: [1, 2, 4, 5],
+    output: function (val) {
+        return this.data;
+    }
+};
+console.log(complexObject.data);
+console.log(complexObject.output(true));
