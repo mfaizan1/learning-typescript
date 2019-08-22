@@ -8,3 +8,8 @@ let makeArray = (...args: number[]) : number[] => {
     return args
 }
 console.log(makeArray(1,2,4,5,6))
+
+let games = ["pubg","gta","maxpayne"];
+let [game1, game2] = games;
+
+console.log(game1, game2);

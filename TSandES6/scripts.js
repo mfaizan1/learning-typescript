@@ -12,3 +12,6 @@ var makeArray = function () {
     return args;
 };
 console.log(makeArray(1, 2, 4, 5, 6));
+var games = ["pubg", "gta", "maxpayne"];
+var game1 = games[0], game2 = games[1];
+console.log(game1, game2);
