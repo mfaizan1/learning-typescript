@@ -64,3 +64,22 @@ class mathHelpers{
 }
 console.log(mathHelpers.PI);
 console.log(mathHelpers.circumference(10));
+
+abstract class Project {
+    projectName: string = 'project';
+    budget: number;
+    abstract changeName( name: string);
+    calcBudget(): number{
+        return this.budget * 2;
+    }
+}
+class TypeScriptProject  extends Project{
+    changeName(name: string) {
+       this.projectName = name;
+    }
+}
+
+let newTSProject  = new TypeScriptProject();
+console.log(newTSProject);
+newTSProject.changeName("Ts learning")
+console.log(newTSProject);
