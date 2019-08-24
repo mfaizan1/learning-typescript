@@ -25,3 +25,13 @@ person.setAge(24);
 console.log(person.getAge());
 person.setType("wierd");
 console.log(person.getType());
+
+
+class Faizan extends Person{
+    name: string = "faizan";
+    constructor(username: string){
+        super("faizan",username)
+    }
+}
+const faizan = new Faizan("fazi" );
+console.log(faizan);
