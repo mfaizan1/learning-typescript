@@ -35,3 +35,23 @@ class Faizan extends Person{
 }
 const faizan = new Faizan("fazi" );
 console.log(faizan);
+
+class Plant {
+    private _species: string = "default";
+    set species(value: string){
+        if(value.length > 3){
+            this._species = value;
+        }else {
+            this._species = "don't know"
+        }
+    }
+    get species(){
+        return this._species;
+    }
+}
+const plant = new Plant();
+console.log(plant.species);
+plant.species = "hello";
+console.log(plant.species);
+plant.species = 'hi';
+console.log(plant.species);
