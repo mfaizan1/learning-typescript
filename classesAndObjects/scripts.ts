@@ -55,3 +55,12 @@ plant.species = "hello";
 console.log(plant.species);
 plant.species = 'hi';
 console.log(plant.species);
+
+class mathHelpers{
+    static PI: number = 3.14;
+    static circumference(diameter: number) :  number{
+        return this.PI * diameter;
+    }
+}
+console.log(mathHelpers.PI);
+console.log(mathHelpers.circumference(10));

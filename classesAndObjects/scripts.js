@@ -78,3 +78,14 @@ plant.species = "hello";
 console.log(plant.species);
 plant.species = 'hi';
 console.log(plant.species);
+var mathHelpers = /** @class */ (function () {
+    function mathHelpers() {
+    }
+    mathHelpers.circumference = function (diameter) {
+        return this.PI * diameter;
+    };
+    mathHelpers.PI = 3.14;
+    return mathHelpers;
+}());
+console.log(mathHelpers.PI);
+console.log(mathHelpers.circumference(10));
