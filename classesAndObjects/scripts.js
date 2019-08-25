@@ -92,6 +92,7 @@ console.log(mathHelpers.circumference(10));
 var Project = /** @class */ (function () {
     function Project() {
         this.projectName = 'project';
+        this.budget = 10;
     }
     Project.prototype.calcBudget = function () {
         return this.budget * 2;

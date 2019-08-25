@@ -1,12 +1,7 @@
-namespace myMath{
-    const PI = 3.14;
-    export function calcCircuference(diameter: number){
-        return diameter* PI;
-    }
-    export function calcRect(length: number, width: number){
-        return width * length;
-    }
-}
-
+/// <reference path="./circleMath.ts" /> 
+/// <reference path="./rectMath.ts" /> 
 console.log(myMath.calcCircuference(29));
 console.log(myMath.calcRect(10,20));
+
+//tsc --outFile namespaces/scripts.js namespaces/scripts.ts
+// this command will combine refreneced files into one
