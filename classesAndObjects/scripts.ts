@@ -67,8 +67,8 @@ console.log(mathHelpers.circumference(10));
 
 abstract class Project {
     projectName: string = 'project';
-    budget: number;
-    abstract changeName( name: string);
+    budget: number = 10;
+    abstract changeName( name: string): void;
     calcBudget(): number{
         return this.budget * 2;
     }
