@@ -1,5 +1,7 @@
 interface NamedPerson{
-    firstName: string
+    firstName: string,
+    age?: number,
+    [propName: string]: any
 }
 
 const sayHello = (person: NamedPerson) => {
@@ -12,6 +14,10 @@ let person1 = {
     firstName: "faizan",
     age: 24
 }
-sayHello(person1);
+sayHello({
+    firstName: "faizan",
+    age: 24,
+    hobbies: ['cooking', 'singing']
+});
 changeName(person1);
 sayHello(person1);
