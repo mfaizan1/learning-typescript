@@ -30,4 +30,9 @@ var PersonClass = /** @class */ (function () {
 var person3 = new PersonClass('faizan', 'ul haq');
 console.log(person3.firstName);
 console.log(person3.lastName);
-console.log(person3.greet("blank"));
+person3.greet("blank");
+var myMulFunc;
+myMulFunc = function (num1, num2) {
+    return num1 * num2;
+};
+console.log(myMulFunc(4, 5));

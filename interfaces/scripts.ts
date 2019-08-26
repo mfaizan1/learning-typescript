@@ -41,3 +41,15 @@ const person3 = new PersonClass('faizan','ul haq')
 console.log(person3.firstName);
 console.log(person3.lastName);
 person3.greet("blank");
+
+
+//interfaces for funciton types
+
+interface doubleValueFunc{
+    (number1: number, number2: number): number;
+}
+let myMulFunc: doubleValueFunc;
+myMulFunc = (num1: number, num2 : number): number => {
+    return num1 * num2;
+}
+console.log(myMulFunc(4,5))
