@@ -23,3 +23,21 @@ sayHello(person1);
 changeName(person1);
 sayHello(person1);
 person1.greet("ul haq");
+
+class PersonClass implements NamedPerson{
+    firstName: string;
+    lastName: string
+    greet(lastName: string): void {
+        console.log(`Hi, i am ${this.firstName} ${this.lastName}.`)
+    }
+    constructor(firstname: string , lastName: string){
+        this.firstName = firstname;
+        this.lastName = lastName;
+    }
+
+    
+}
+const person3 = new PersonClass('faizan','ul haq')
+console.log(person3.firstName);
+console.log(person3.lastName);
+person3.greet("blank");
