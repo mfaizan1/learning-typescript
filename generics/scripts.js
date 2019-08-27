@@ -19,3 +19,15 @@ arr.push(-222);
 console.log(arr);
 var echo2 = betterEcho;
 console.log(echo2('something'));
+var simpleMath = /** @class */ (function () {
+    function simpleMath() {
+    }
+    simpleMath.prototype.mul = function () {
+        return +this.baseValue * +this.multiplyValue;
+    };
+    return simpleMath;
+}());
+var mth = new simpleMath();
+mth.baseValue = "somthing";
+mth.multiplyValue = 20;
+console.log(mth.mul());
