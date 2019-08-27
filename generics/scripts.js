@@ -17,3 +17,5 @@ var arr = [1, 4, 2, 5, 22];
 arr.push(-222);
 // arr.push('111') cannot do this now since we have made array not generic
 console.log(arr);
+var echo2 = betterEcho;
+console.log(echo2('something'));

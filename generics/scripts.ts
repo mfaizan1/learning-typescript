@@ -20,3 +20,5 @@ arr.push(-222);
 // arr.push('111') cannot do this now since we have made array not generic
 console.log(arr);
 
+const echo2 : <T>(data : T) => T = betterEcho;
+console.log(echo2<string>('something'));
