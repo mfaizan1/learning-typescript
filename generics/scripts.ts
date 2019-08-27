@@ -23,15 +23,15 @@ console.log(arr);
 const echo2 : <T>(data : T) => T = betterEcho;
 console.log(echo2<string>('something'));
 
-class simpleMath<T extends number>{
+class simpleMath<T extends number | string, U extends number | string>{
     baseValue: T;
-    multiplyValue: T;
+    multiplyValue: U;
     mul(): number{
         return +this.baseValue * +this.multiplyValue;
     }
 }
 
-const mth =  new simpleMath<number>();
+const mth =  new simpleMath<number, string>();
 mth.baseValue = 10;
-mth.multiplyValue = 20;
+mth.multiplyValue = "20";
 console.log(mth.mul());

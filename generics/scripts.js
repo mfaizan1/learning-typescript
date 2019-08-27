@@ -28,6 +28,6 @@ var simpleMath = /** @class */ (function () {
     return simpleMath;
 }());
 var mth = new simpleMath();
-mth.baseValue = "somthing";
-mth.multiplyValue = 20;
+mth.baseValue = 10;
+mth.multiplyValue = "20";
 console.log(mth.mul());
