@@ -16,3 +16,19 @@ var Person3 = /** @class */ (function () {
     ], Person3);
     return Person3;
 }());
+function printable(constructorFn) {
+    constructorFn.prototype.print = function () {
+        console.log(this);
+    };
+}
+var Plant2 = /** @class */ (function () {
+    function Plant2() {
+        this.name = 'Plum tree';
+    }
+    Plant2 = __decorate([
+        printable
+    ], Plant2);
+    return Plant2;
+}());
+var newPlant = new Plant2();
+newPlant.print();
