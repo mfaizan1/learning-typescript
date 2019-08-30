@@ -32,3 +32,35 @@ var Plant2 = /** @class */ (function () {
 }());
 var newPlant = new Plant2();
 newPlant.print();
+var Project2 = /** @class */ (function () {
+    function Project2(projectName) {
+        this.projectName = projectName;
+    }
+    Project2.prototype.calcBudget = function () {
+        console.log(1000);
+    };
+    __decorate([
+        editable(false)
+    ], Project2.prototype, "calcBudget", null);
+    return Project2;
+}());
+function editable(value) {
+    return function (target, propName, descriptor) {
+        descriptor.writable = value;
+    };
+}
+function overrideAble(value) {
+    return function (target, propName) {
+        var newDescriptor = {
+            writable: value
+        };
+        return newDescriptor;
+    };
+}
+var project = new Project2("first project");
+console.log(project);
+project.calcBudget();
+// project.calcBudget = function(){
+//     console.log(3000);
+// }
+project.calcBudget();
