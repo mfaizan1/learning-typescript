@@ -4,7 +4,8 @@
   "description": "",
   "main": "scripts.js",
   "scripts": {
-    "start": "lite-server"
+    "start": "lite-server",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -15,10 +16,13 @@
   "dependencies": {
     "jquery": "^3.4.1",
     "lite-server": "^2.5.4",
-    "systemjs": "^0.19.43"
+    "systemjs": "^0.19.43",
+    "typescript": "^3.6.2"
   },
   "devDependencies": {
     "@types/jquery": "^3.3.31",
-    "@types/node": "^12.7.3"
+    "@types/node": "^12.7.3",
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^5.0.1"
   }
 }
