@@ -3,6 +3,13 @@
     <title>Learning Typescript</title>
 </head>
 <body>
-    <script src='./decorators/scripts.js'></script>
+    <script src="./node_modules/systemjs/dist/system.js"></script>
+    <script>
+        SystemJS.config({
+            baseURL : '/modules/',
+            defaultJSExtensions: true
+        })
+        SystemJS.import('scripts.js')
+    </script>
     <!-- <script src='./generics/excercise.js'></script> -->
 </body>
