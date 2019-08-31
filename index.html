@@ -3,10 +3,14 @@
     <title>Learning Typescript</title>
 </head>
 <body>
+    <div id="maindiv">Change it with jquery</div>
     <script src="./node_modules/systemjs/dist/system.js"></script>
     <script>
         SystemJS.config({
-            baseURL : '/modules/',
+            map: {
+                "jQuery": './node_modules/jquery/dist/jquery.js'
+            },
+            baseURL : '/jquery/',
             defaultJSExtensions: true
         })
         SystemJS.import('scripts.js')
